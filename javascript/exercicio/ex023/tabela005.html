@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio de  Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: chartreuse;
+       }
+
+       col.cnome {
+        background-color: aqua;
+       }
+
+       col.csexo {
+        background-color: blue;
+       }
+
+       col.cgrupo {
+        background-color: red;
+       }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cgrupo" span="2">    
+        </colgroup>
+
+        <caption> Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Veterinario</td>
+        </tr>
+        <tr class="destaque">
+            <td>Cleonice</td>
+            <td>F</td>
+            <td>42</td>
+            <td>Atendente</td>
+        </tr>
+        <tr>
+            <td>Silvia</td>
+            <td class="destaque">F</td>
+            <td>28</td>
+            <td>Reporter</td>
+        </tr>
+        <tr>
+            <td>Marcio</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Fabricio</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Cesar</td>
+            <td>M</td>
+            <td>55</td>
+            <td>Auxiliar</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>
